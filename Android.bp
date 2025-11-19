@@ -1,0 +1,16 @@
+android_app_import {
+    name: "agc",
+    owner: "agc",
+    apk: "proprietary/system/priv-app/agc/Camera.apk",
+    overrides: [
+        "Aperture",
+        "Snap",
+        "Camera2",
+        "GoogleCameraGo",
+    ],
+    certificate: "platform",
+    privileged: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
