@@ -1,0 +1,26 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "packages/apps/agc",
+    ],
+}
+
+android_app_import {
+    name: "MiuiCamera",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/agc/Camera.apk",
+    overrides: [
+        "Aperture",
+        "Snap",
+        "Camera2",
+        "GoogleCameraGo",
+    ],
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
